@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { Settings } from 'lucide-react';
-import { usePassages } from '../context/PassagesContext';
 
 const SectionHeader = ({ title }: { title: string }) => (
   <div className="mt-16 mb-8 text-center">
