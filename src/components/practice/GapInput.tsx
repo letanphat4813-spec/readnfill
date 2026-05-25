@@ -79,6 +79,11 @@ export default function GapInput({ question }: { question: GapQuestion }) {
         >
           <Lightbulb className="w-4 h-4" />
         </button>
+        {isSubmitted && isCorrect === false && (
+          <span className="ml-2 text-[11px] font-bold px-2 py-0.5 rounded-md whitespace-nowrap animate-fade-in bg-emerald-100 text-emerald-700 border border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800" title="Correct Answer">
+            {question.correctAnswer.join(" / ")}
+          </span>
+        )}
       </span>
 
       {/* Word Limit Guardian Pop-up Box */}
